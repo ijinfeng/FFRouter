@@ -14,6 +14,12 @@
 		780D89A525F0DBD200E50BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780D89A425F0DBD200E50BD6 /* Assets.xcassets */; };
 		780D89A825F0DBD200E50BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D89A625F0DBD200E50BD6 /* LaunchScreen.storyboard */; };
 		780D89AB25F0DBD200E50BD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D89AA25F0DBD200E50BD6 /* main.m */; };
+		780D89B525F0DCA100E50BD6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D89B425F0DCA100E50BD6 /* Router.swift */; };
+		780D89B825F0DD5B00E50BD6 /* UrlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D89B725F0DD5B00E50BD6 /* UrlParser.swift */; };
+		780D89BC25F0DDFD00E50BD6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D89BB25F0DDFD00E50BD6 /* SecondViewController.m */; };
+		780D89BF25F0E7D600E50BD6 /* router_handle.sh in Resources */ = {isa = PBXBuildFile; fileRef = 780D89BE25F0E7D600E50BD6 /* router_handle.sh */; };
+		784947B525F20C3D002A6AE6 /* ThreeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784947B425F20C3D002A6AE6 /* ThreeeViewController.swift */; };
+		7849489225F20FE8002A6AE6 /* UrlContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7849489125F20FE8002A6AE6 /* UrlContext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +35,15 @@
 		780D89A725F0DBD200E50BD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		780D89A925F0DBD200E50BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		780D89AA25F0DBD200E50BD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		780D89B325F0DCA100E50BD6 /* FFRouter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFRouter-Bridging-Header.h"; sourceTree = "<group>"; };
+		780D89B425F0DCA100E50BD6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		780D89B725F0DD5B00E50BD6 /* UrlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlParser.swift; sourceTree = "<group>"; };
+		780D89BA25F0DDFD00E50BD6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		780D89BB25F0DDFD00E50BD6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		780D89BE25F0E7D600E50BD6 /* router_handle.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = router_handle.sh; sourceTree = "<group>"; };
+		784947B425F20C3D002A6AE6 /* ThreeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeeViewController.swift; sourceTree = "<group>"; };
+		7849488F25F20E23002A6AE6 /* RegisterHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterHandle.h; sourceTree = "<group>"; };
+		7849489125F20FE8002A6AE6 /* UrlContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +78,14 @@
 			children = (
 				780D899825F0DBD100E50BD6 /* AppDelegate.h */,
 				780D899925F0DBD100E50BD6 /* AppDelegate.m */,
+				780D89B225F0DBFB00E50BD6 /* Router */,
 				780D899B25F0DBD100E50BD6 /* SceneDelegate.h */,
 				780D899C25F0DBD100E50BD6 /* SceneDelegate.m */,
 				780D899E25F0DBD100E50BD6 /* ViewController.h */,
 				780D899F25F0DBD100E50BD6 /* ViewController.m */,
+				780D89BA25F0DDFD00E50BD6 /* SecondViewController.h */,
+				780D89BB25F0DDFD00E50BD6 /* SecondViewController.m */,
+				784947B425F20C3D002A6AE6 /* ThreeeViewController.swift */,
 				780D89A125F0DBD100E50BD6 /* Main.storyboard */,
 				780D89A425F0DBD200E50BD6 /* Assets.xcassets */,
 				780D89A625F0DBD200E50BD6 /* LaunchScreen.storyboard */,
@@ -74,6 +93,19 @@
 				780D89AA25F0DBD200E50BD6 /* main.m */,
 			);
 			path = FFRouter;
+			sourceTree = "<group>";
+		};
+		780D89B225F0DBFB00E50BD6 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				780D89B425F0DCA100E50BD6 /* Router.swift */,
+				780D89B725F0DD5B00E50BD6 /* UrlParser.swift */,
+				7849489125F20FE8002A6AE6 /* UrlContext.swift */,
+				780D89BE25F0E7D600E50BD6 /* router_handle.sh */,
+				780D89B325F0DCA100E50BD6 /* FFRouter-Bridging-Header.h */,
+				7849488F25F20E23002A6AE6 /* RegisterHandle.h */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,6 +118,7 @@
 				780D899125F0DBD100E50BD6 /* Sources */,
 				780D899225F0DBD100E50BD6 /* Frameworks */,
 				780D899325F0DBD100E50BD6 /* Resources */,
+				780D89C125F0E8A500E50BD6 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -106,6 +139,7 @@
 				TargetAttributes = {
 					780D899425F0DBD100E50BD6 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -133,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				780D89A825F0DBD200E50BD6 /* LaunchScreen.storyboard in Resources */,
+				780D89BF25F0E7D600E50BD6 /* router_handle.sh in Resources */,
 				780D89A525F0DBD200E50BD6 /* Assets.xcassets in Resources */,
 				780D89A325F0DBD100E50BD6 /* Main.storyboard in Resources */,
 			);
@@ -140,14 +175,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		780D89C125F0E8A500E50BD6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\nsh ${SRCROOT}/${PROJECT_NAME}/Router/router_handle.sh\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		780D899125F0DBD100E50BD6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				780D89A025F0DBD100E50BD6 /* ViewController.m in Sources */,
+				7849489225F20FE8002A6AE6 /* UrlContext.swift in Sources */,
+				784947B525F20C3D002A6AE6 /* ThreeeViewController.swift in Sources */,
 				780D899A25F0DBD100E50BD6 /* AppDelegate.m in Sources */,
+				780D89B525F0DCA100E50BD6 /* Router.swift in Sources */,
+				780D89BC25F0DDFD00E50BD6 /* SecondViewController.m in Sources */,
 				780D89AB25F0DBD200E50BD6 /* main.m in Sources */,
+				780D89B825F0DD5B00E50BD6 /* UrlParser.swift in Sources */,
 				780D899D25F0DBD100E50BD6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FFRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -299,6 +360,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jinfeng.FFRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FFRouter/Router/FFRouter-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -308,6 +372,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FFRouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +381,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = jinfeng.FFRouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FFRouter/Router/FFRouter-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
