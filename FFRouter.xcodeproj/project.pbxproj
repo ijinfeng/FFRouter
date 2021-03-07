@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		372D394C25F4C0A300268AF5 /* NSString+other.m in Sources */ = {isa = PBXBuildFile; fileRef = 372D394B25F4C0A300268AF5 /* NSString+other.m */; };
 		780D899A25F0DBD100E50BD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D899925F0DBD100E50BD6 /* AppDelegate.m */; };
 		780D899D25F0DBD100E50BD6 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D899C25F0DBD100E50BD6 /* SceneDelegate.m */; };
 		780D89A025F0DBD100E50BD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D899F25F0DBD100E50BD6 /* ViewController.m */; };
@@ -23,6 +24,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		372D394925F4AC2400268AF5 /* RouterUrlList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterUrlList.h; sourceTree = "<group>"; };
+		372D394A25F4C0A300268AF5 /* NSString+other.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+other.h"; sourceTree = "<group>"; };
+		372D394B25F4C0A300268AF5 /* NSString+other.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+other.m"; sourceTree = "<group>"; };
 		780D899525F0DBD100E50BD6 /* FFRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		780D899825F0DBD100E50BD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		780D899925F0DBD100E50BD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +85,8 @@
 				780D89B225F0DBFB00E50BD6 /* Router */,
 				780D899B25F0DBD100E50BD6 /* SceneDelegate.h */,
 				780D899C25F0DBD100E50BD6 /* SceneDelegate.m */,
+				372D394A25F4C0A300268AF5 /* NSString+other.h */,
+				372D394B25F4C0A300268AF5 /* NSString+other.m */,
 				780D899E25F0DBD100E50BD6 /* ViewController.h */,
 				780D899F25F0DBD100E50BD6 /* ViewController.m */,
 				780D89BA25F0DDFD00E50BD6 /* SecondViewController.h */,
@@ -104,6 +110,7 @@
 				780D89BE25F0E7D600E50BD6 /* router_handle.sh */,
 				780D89B325F0DCA100E50BD6 /* FFRouter-Bridging-Header.h */,
 				7849488F25F20E23002A6AE6 /* RegisterHandle.h */,
+				372D394925F4AC2400268AF5 /* RouterUrlList.h */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -202,6 +209,7 @@
 			files = (
 				780D89A025F0DBD100E50BD6 /* ViewController.m in Sources */,
 				7849489225F20FE8002A6AE6 /* UrlContext.swift in Sources */,
+				372D394C25F4C0A300268AF5 /* NSString+other.m in Sources */,
 				784947B525F20C3D002A6AE6 /* ThreeeViewController.swift in Sources */,
 				780D899A25F0DBD100E50BD6 /* AppDelegate.m in Sources */,
 				780D89B525F0DCA100E50BD6 /* Router.swift in Sources */,
@@ -354,6 +362,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FFRouter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -375,6 +384,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FFRouter/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -17,9 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondViewController : UIViewController
 
-  Register_router(open, @"ff://home/second")
+  Register_router(open    , @"ff://home/second")
 
-Register_router(login, "ff://home/login")
+Register_router(  login, "ff://home/login")
 @end
 
 NS_ASSUME_NONNULL_END
