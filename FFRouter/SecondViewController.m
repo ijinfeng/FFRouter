@@ -16,11 +16,11 @@
     self.title = @"second";
 }
 
-+ (void)open:(UrlContext *)context {
++ (void)open:(FFUrlContext *)context {
     
 }
 
-+ (void)login:(UrlContext *)context {
++ (void)login:(FFUrlContext *)context {
     
 }
 

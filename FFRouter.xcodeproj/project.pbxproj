@@ -15,16 +15,17 @@
 		780D89A525F0DBD200E50BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 780D89A425F0DBD200E50BD6 /* Assets.xcassets */; };
 		780D89A825F0DBD200E50BD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 780D89A625F0DBD200E50BD6 /* LaunchScreen.storyboard */; };
 		780D89AB25F0DBD200E50BD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D89AA25F0DBD200E50BD6 /* main.m */; };
-		780D89B525F0DCA100E50BD6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D89B425F0DCA100E50BD6 /* Router.swift */; };
 		780D89B825F0DD5B00E50BD6 /* UrlParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780D89B725F0DD5B00E50BD6 /* UrlParser.swift */; };
 		780D89BC25F0DDFD00E50BD6 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 780D89BB25F0DDFD00E50BD6 /* SecondViewController.m */; };
 		780D89BF25F0E7D600E50BD6 /* router_handle.sh in Resources */ = {isa = PBXBuildFile; fileRef = 780D89BE25F0E7D600E50BD6 /* router_handle.sh */; };
 		784947B525F20C3D002A6AE6 /* ThreeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784947B425F20C3D002A6AE6 /* ThreeeViewController.swift */; };
-		7849489225F20FE8002A6AE6 /* UrlContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7849489125F20FE8002A6AE6 /* UrlContext.swift */; };
+		787C3E3825F7587900C8273C /* FFRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C3E3725F7587900C8273C /* FFRouterManager.m */; };
+		787C3E3E25F7590500C8273C /* FFUrlContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C3E3D25F7590500C8273C /* FFUrlContext.m */; };
+		787C3F6925F75AE400C8273C /* FFRouterStringMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C3F6825F75AE400C8273C /* FFRouterStringMap.m */; };
+		787C3F6F25F75D5C00C8273C /* FourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 787C3F6E25F75D5C00C8273C /* FourViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		372D394925F4AC2400268AF5 /* RouterUrlList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RouterUrlList.h; sourceTree = "<group>"; };
 		372D394A25F4C0A300268AF5 /* NSString+other.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+other.h"; sourceTree = "<group>"; };
 		372D394B25F4C0A300268AF5 /* NSString+other.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+other.m"; sourceTree = "<group>"; };
 		780D899525F0DBD100E50BD6 /* FFRouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFRouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,14 +41,20 @@
 		780D89A925F0DBD200E50BD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		780D89AA25F0DBD200E50BD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		780D89B325F0DCA100E50BD6 /* FFRouter-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FFRouter-Bridging-Header.h"; sourceTree = "<group>"; };
-		780D89B425F0DCA100E50BD6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		780D89B725F0DD5B00E50BD6 /* UrlParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlParser.swift; sourceTree = "<group>"; };
 		780D89BA25F0DDFD00E50BD6 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		780D89BB25F0DDFD00E50BD6 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		780D89BE25F0E7D600E50BD6 /* router_handle.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = router_handle.sh; sourceTree = "<group>"; };
 		784947B425F20C3D002A6AE6 /* ThreeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeeViewController.swift; sourceTree = "<group>"; };
 		7849488F25F20E23002A6AE6 /* RegisterHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterHandle.h; sourceTree = "<group>"; };
-		7849489125F20FE8002A6AE6 /* UrlContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlContext.swift; sourceTree = "<group>"; };
+		787C3E3625F7587900C8273C /* FFRouterManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFRouterManager.h; sourceTree = "<group>"; };
+		787C3E3725F7587900C8273C /* FFRouterManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFRouterManager.m; sourceTree = "<group>"; };
+		787C3E3C25F7590500C8273C /* FFUrlContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFUrlContext.h; sourceTree = "<group>"; };
+		787C3E3D25F7590500C8273C /* FFUrlContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFUrlContext.m; sourceTree = "<group>"; };
+		787C3F6725F75AE400C8273C /* FFRouterStringMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFRouterStringMap.h; sourceTree = "<group>"; };
+		787C3F6825F75AE400C8273C /* FFRouterStringMap.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFRouterStringMap.m; sourceTree = "<group>"; };
+		787C3F6D25F75D5C00C8273C /* FourViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourViewController.h; sourceTree = "<group>"; };
+		787C3F6E25F75D5C00C8273C /* FourViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,7 @@
 			children = (
 				780D899825F0DBD100E50BD6 /* AppDelegate.h */,
 				780D899925F0DBD100E50BD6 /* AppDelegate.m */,
+				787C3F6C25F75D5000C8273C /* empty */,
 				780D89B225F0DBFB00E50BD6 /* Router */,
 				780D899B25F0DBD100E50BD6 /* SceneDelegate.h */,
 				780D899C25F0DBD100E50BD6 /* SceneDelegate.m */,
@@ -104,15 +112,27 @@
 		780D89B225F0DBFB00E50BD6 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				780D89B425F0DCA100E50BD6 /* Router.swift */,
+				787C3E3625F7587900C8273C /* FFRouterManager.h */,
+				787C3E3725F7587900C8273C /* FFRouterManager.m */,
+				787C3E3C25F7590500C8273C /* FFUrlContext.h */,
+				787C3E3D25F7590500C8273C /* FFUrlContext.m */,
 				780D89B725F0DD5B00E50BD6 /* UrlParser.swift */,
-				7849489125F20FE8002A6AE6 /* UrlContext.swift */,
 				780D89BE25F0E7D600E50BD6 /* router_handle.sh */,
 				780D89B325F0DCA100E50BD6 /* FFRouter-Bridging-Header.h */,
 				7849488F25F20E23002A6AE6 /* RegisterHandle.h */,
-				372D394925F4AC2400268AF5 /* RouterUrlList.h */,
+				787C3F6725F75AE400C8273C /* FFRouterStringMap.h */,
+				787C3F6825F75AE400C8273C /* FFRouterStringMap.m */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		787C3F6C25F75D5000C8273C /* empty */ = {
+			isa = PBXGroup;
+			children = (
+				787C3F6D25F75D5C00C8273C /* FourViewController.h */,
+				787C3F6E25F75D5C00C8273C /* FourViewController.m */,
+			);
+			path = empty;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,14 +228,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				780D89A025F0DBD100E50BD6 /* ViewController.m in Sources */,
-				7849489225F20FE8002A6AE6 /* UrlContext.swift in Sources */,
+				787C3E3E25F7590500C8273C /* FFUrlContext.m in Sources */,
+				787C3F6925F75AE400C8273C /* FFRouterStringMap.m in Sources */,
 				372D394C25F4C0A300268AF5 /* NSString+other.m in Sources */,
 				784947B525F20C3D002A6AE6 /* ThreeeViewController.swift in Sources */,
 				780D899A25F0DBD100E50BD6 /* AppDelegate.m in Sources */,
-				780D89B525F0DCA100E50BD6 /* Router.swift in Sources */,
+				787C3F6F25F75D5C00C8273C /* FourViewController.m in Sources */,
 				780D89BC25F0DDFD00E50BD6 /* SecondViewController.m in Sources */,
 				780D89AB25F0DBD200E50BD6 /* main.m in Sources */,
 				780D89B825F0DD5B00E50BD6 /* UrlParser.swift in Sources */,
+				787C3E3825F7587900C8273C /* FFRouterManager.m in Sources */,
 				780D899D25F0DBD100E50BD6 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

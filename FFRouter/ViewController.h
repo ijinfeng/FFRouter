@@ -6,9 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RegisterHandle.h"
+#import "FFRouter-Swift.h"
+
+
 
    @interface              ViewController      : UIViewController
 
+Register_router(openHome, @"ff://home/other?id=x&h=123")
 
 @end
 

@@ -10,20 +10,20 @@ fi
 
 #${SRCROOT} ${PROJECT_NAME}
 
+echo "current path:\n\t $PWD"
+
 # 列出工程目录下的所有文件和文件夹
 PRODUCT_PATH=$PWD/${PROJECT_NAME}
-echo "project path: $PRODUCT_PATH"
+echo "project path:\n\t $PRODUCT_PATH"
 
-cd $ROUTER_DIR
-echo "router path: $PWD"
+echo "router map path:\n\t $PWD/${ROUTER_DIR}/router_map.json"
 
 # 创建映射表
-touch router_map.json
+echo "create router_map.json if No this file exit"
+cd ${ROUTER_DIR}
+touch router_map.txt
 
-# 创建路由字符串对应变量清单
-# touch router_list.h
-
-echo "// create by jinfeng" > router_map.json
+echo "// create by jinfeng\n\n" > router_map.json
 :<< json
 {
     "class": "ViewController",
@@ -34,10 +34,22 @@ echo "// create by jinfeng" > router_map.json
 }
 json
 
-cd $PRODUCT_PATH
-for file in `ls ${PRODUCT_PATH}`
+
+
+ROUTER_MAP_STRING='['
+
+#cd $PRODUCT_PATH
+read_path=$PRODUCT_PATH
+
+function read_file_router() {
+read_path=$read_path$1
+
+echo "read path:\n\t$read_path"
+
+for file in `ls $read_path`
 do
-    if [ -f ${file} ]; then
+    file_path=$read_path'/'$file
+    if [ -f ${file_path} ]; then
         echo "$file is a file"
         
         # 先确定是oc还是swift
@@ -62,7 +74,7 @@ do
         fi
         
         # 读取文件中的每一行
-        cat $file | while read line
+        while read line
         do
             if [ ${#line} == 0 ]; then
                 continue;
@@ -89,16 +101,39 @@ do
                 router_no_wspace=${line// /}
                 router_arr=(${router_no_wspace//,/ })
                 method=${router_arr[0]##*(}
-                url=${router_arr[1]#*"}
+                url=${router_arr[1]#*\"}
+                url=${url%\"*}
                 echo "method=$method"
                 echo "url=$url"
+                
+                # 找到一个就写入一个
+                dic="{\"class\":\"$cls_name\",\"method\":\"$method\",\"url\":\"$url\",\"platform\":\"ios\",\"language\":\"$language\"}"
+                if [ $ROUTER_MAP_STRING == '[' ]; then
+                    ROUTER_MAP_STRING=$ROUTER_MAP_STRING$dic
+                else
+                    ROUTER_MAP_STRING=$ROUTER_MAP_STRING','$dic
+                fi
             fi
-        done
-    else
+        done < $file_path
+    elif [ -d ${file_path} ]; then
         echo "$file is a dir"
+        read_file_router '/'$file
+        # 读取完文件夹下之后需要复原到初始路径
+        read_path=$PRODUCT_PATH
+    else
+        echo "$file is a other file"
     fi
 done
+}
 
+read_file_router
 
+ROUTER_MAP_STRING=$ROUTER_MAP_STRING']'
 
+echo '--- get all router map ---'
 
+echo $ROUTER_MAP_STRING
+
+echo "router path:\n\t $PWD"
+
+echo $ROUTER_MAP_STRING >> router_map.txt
